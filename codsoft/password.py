@@ -25,13 +25,14 @@ def inputs():
       if upper:
        char+=string.ascii_uppercase
       if lower:
-       char+=string.ascii_lowerrcase
+       char+=string.ascii_lowercase
       if digits:
        char+=string.digits
       if special:
        char+=string.punctuation
       password1="".join(random.choice(char) for i in range(length))
       print("Password generated is : ",password1)
+      
 
 
 #driver code
